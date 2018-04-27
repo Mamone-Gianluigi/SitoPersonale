@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Gianluigi Mamone</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+	<script src='vendors/scroll2Section.js'></script>
+	<script>
+		var navFooter = $("footer nav a[data-section]");
+		$("section").scroll2Section({menu:'header nav',offsetTop:56}).on('update',function(event,element){
+			var href = $(element).attr('href');
+			$(navFooter).parent().removeClass('active');
+			$(navFooter).filter("[href='" + href  + "']").parent().addClass('active');
+		});
+	</script>
+	<header id="header">
+		<div class="container-fluid">
+			<div id="logo" class="pull-left">
+				<h1><a href="#intro" class="scrollto">Gianluigi Mamone</a></h1>
+			</div>
+			<nav id="nav-menu-container" class="navbar navbar-expand-md navbar-dark fixed-top ">
+				<ul class="nav-menu navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" data-section href="#intro">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" data-section href="#main">CHI SONO</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link  js-scroll-trigger" data-section href="#services">FORMAZIONE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" data-section href="#about1">ESPERIENZA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" data-section href="#skills">MY SKILLS</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>PHOTHOGRAPHY</h2>
+                <p style="font-size:18px">Non si chiede mai a un pittore quali pennelli usa o a uno scrittore che macchina per scrivere usa ... Quel che conta è l'idea non la macchina fotografica...[Man Ray]</p>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>At vero eos et accusamus</h2>
+                <p style="font-size:18px">Chi decide chi è normale?...La normalità è un’invenzione di chi è privo di fantasia...[Alda Merini]</p>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Temporibus autem quibusdam</h2>
+                <p style="font-size:18px">Disegna la tua vita seguendo le passioni, non le regole...[Lorenzo Capuano]<p>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Nam libero tempore</h2>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Magnam aliquam quaerat</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+	<main id="main">
+    <section id="about" style="padding-top:30px; padding-bottom:20px;">
+	    <div class="container">
+			<header class="section-header" >
+				<h3 style="background-color:transparent; margin-bottom:4%; margin-top:2%;">CHI SONO</h3>
+				<section id="testimonials" class="section-bg wow fadeInUp" style="background-color:transparent; padding:0px;">
+					<div class="row">
+						<div class="testimonial-item col-md-2">
+							<img src="img/chisono.jpg" class="testimonial-img" alt="">
+						</div>
+						<div class="col-md-10" >
+							<p style="text-align: justify; font-style: italic; font-size:20px;"> 
+								<img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+								Ho 24 Anni, Sono Nato Ad Avellino e l'Informatica &egrave Stata Una Mia Grande Passione Fin Da Bambino ... 
+								Amo Fare Pi&ugrave; Cose Contemporaneamente, Sono Appassionato di 
+								Basket <i style="color:#d2691e;" class="ion-ios-basketball"></i> e di 
+								Fotografia <i class="ion-ios-camera"></i>, mi Piace Avere Tanti Amici e sono Impegnato Nel Sociale.
+								Mi Piace Lavorare Su Me Stesso Per Migliorare Quelli Che Sono I Miei Pregi e Cercare Di Trasformare I Miei Difetti In Qualit&agrave;
+								<img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+							</p>
+						</div>
+					</div>
+				</section>
+			</header>
+			<div class="row about-cols">
+				<div class="col-md-2  wow fadeInUp">
+					<h2 style=" border-left: 5px solid #18d26e; padding-left:5%; margin-top:20%">PREGI</a></h2>
+				</div>
+				<div class="col-md-3 offset-md-1 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+						</div>
+						<h2 class="title" style="margin: 32px 0 -10px 0;"><a href="#">VELOCE</a></h2>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-clock-outline"></i></div>
+						</div>
+						<h2 class="title" style="margin: 32px 0 -10px 0;" ><a href="#">PRECISO</a></h2>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-albums-outline"></i></div>
+						</div>
+						<h2 class="title" style="margin: 32px 0 -10px 0;" ><a href="#">ORGANIZZATO</a></h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row about-cols">
+				<div class="col-md-2  wow fadeInUp">
+					<h2 style=" border-left: 5px solid #18d26e; padding-left:5%; margin-top:20%">DIFETTI</a></h2>
+				</div>
+				<div class="col-md-3 offset-md-1 wow fadeInUp">
+					<div class="about-col">
+					  <div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-eye-outline"></i></div>
+					  </div>
+					  <h2 class="title" style="margin: 32px 0 -10px 0;"><a href="#">ESIGENTE</a></h2>
+					  <p></p>
+					</div>
+			    </div>	  
+				<div class="col-md-3 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-barcode-outline"></i></div>
+						</div>
+						<h2 class="title" style="margin: 32px 0 -10px 0;" ><a href="#">IMPAZIENTE</a></h2>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-3 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img src="img/about-mission.jpg" alt="" class="img-fluid">
+							<div class="icon"><i class="ion-ios-trash-outline"></i></div>
+						</div>
+						<h2 class="title" style="margin: 32px 0 -10px 0;" ><a href="#">ORGOGLIOSO</a></h2>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<header class="section-header">
+				<p style="padding-bottom:0px; padding-top:2%;">
+					Mi Piace Lavorare Su Me Stesso Per Migliorare Quelli Che Sono I Miei 
+					Pregi e Cercare Di Trasformare I Miei Difetti In Qualit&agrave;...
+				</p>
+			    <h3 style="padding-bottom:0px;"></h3>
+			</header>
+        </div> 
+    </section>
+
+    <section id="services" >
+        <div class="container">
+			<header class="section-header wow fadeInUp" >
+				<h3>FORMAZIONE</h3>
+				<p style="margin-bottom: 0;"> Dai uno sguardo alla mia Formazione...</p>
+			</header>
+
+        <div class="row wow fadeInUp" style="background-color: #e9ecef" >		
+		<!--   <div class="page-header">
+			<h1 id="timeline">Timeline</h1>
+		  </div> -->
+		 <div class="icon" style="width: 100%;text-align: center;">
+			<i class="ion-android-arrow-up" style="color:black"></i>
+		 </div>
+	
+		  <ul class="timeline">
+		  
+			<li>
+			  <div class="timeline-badge danger"><i class="ion-trophy"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-left:5%; width:40%;">
+				<div class="timeline-heading">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2 class="timeline-title">LAUREA</h2>
+							<h4 class="timeline-title">2012/2017</h4>
+						</div>
+						<div class="col-lg-4">
+							<img width="100px" src="img/unisa.png" alt="" class="img-fluid">	
+						</div>
+					</div>
+				  
+			
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Laurea di Primo Livello in Scienze e Tecnologie Informatiche (L-31),
+												presso la facoltà di Scienze Matematiche, Fisiche e Naturali - Università degli Studi di Salerno .</p>
+				</div>
+			  </div>
+			</li>
+			<li class="timeline-inverted">
+			   <div class="timeline-badge warning"><i class="ion-trophy"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-right:5%; width:40%;">
+				<div class="timeline-heading">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2 class="timeline-title">WORDPRESS</h2>
+							<h4 class="timeline-title">2016</h4>
+						</div>
+						<div class="col-lg-4">
+							<img height="70px" src="img/macformazione.png" alt="" class="img-fluid">	
+						</div>
+					</div>
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Corso di WordPress rilasciato da MAC Formazione - Manocalzati(Av) </p>
+				</div>
+			  </div>
+			</li>
+			<li>
+			   <div class="timeline-badge success"><i class="ion-ios-book"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-left:5%; width:40%;">
+				<div class="timeline-heading">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2 class="timeline-title">DIPLOMA</h2>
+							<h4 class="timeline-title">2007/2012</h4>
+						</div>
+						<div class="col-lg-4">
+							<img style="width: 75%;" src="img/logomancini.gif" alt="" class="img-fluid">	
+						</div>
+					</div>
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Diploma di Liceo Scientifico con indirizzo Piano Nazionale Informatica - 
+												 Liceo Scientifico Statale “Pasquale Stanislao Mancini” - Avellino </p>
+				</div>
+			  </div>
+			</li>
+		  </ul>
+        </div>
+      </div>
+    </section><!-- #services -->
+	
+	<section id="about1" >
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+			<h3>ESPERIENZA</h3>
+			<p style="margin-bottom: 0;">Dai uno sguardo alle mie esperienze lavorative...</p>
+        </header>
+
+        <div class="row wow fadeInUp" style="background-color: #e9ecef" >
+			<div class="icon" style="width: 100%;text-align: center;">
+				<i class="ion-android-arrow-up" style="color:black;font-size: 33px;"></i>
+			</div>
+		  <ul class="timeline">
+		  
+			<li>
+			  <div class="timeline-badge danger"><i class="ion-trophy"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-left:5%; width:40%;">
+				<div class="timeline-heading">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2 class="timeline-title">Tirocinio</h2>
+							<h4 class="timeline-title">2017<span style="font-size: 18px" class="timeline-title"> - Universit&agrave; Degli Studi di Salerno</span> </h4>
+						</div>
+						<div class="col-lg-4">
+							<img width="100px" src="img/unisa.png" alt="" class="img-fluid">	
+						</div>
+					</div>
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Conseguito il Tirocinio con il Prof. Michele Risi presso la facoltà di Scienze Matematiche, 
+												 Fisiche e Naturali, per sviluppare una Tesi sperimentale che ha portato alla creazione
+												 di una Web Application</p>
+				</div>
+			  </div>
+			</li>
+
+			<li class="timeline-inverted">
+			   <div class="timeline-badge warning"><i class="ion-ios-people"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-right:5%; width:40%;">
+				<div class="timeline-heading">
+					<div class="row">
+						<div class="col-lg-7">
+							  <h2 class="timeline-title">Stage</h2>
+							  <h4 class="timeline-title">2018<span style="font-size: 18px" class="timeline-title"> - DatagrafServizi Srl</span> </h4>
+						</div>
+						<div class="col-lg-5">
+							<img src="img/logodatagraf.png" alt="" class="img-fluid" style="height: 20px;width: 100%;margin-top: 10px;">	
+						</div>
+					</div>
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Stage presso la Societ&agrave; Datagraf Servizi Srl che progetta, realizza
+												 e gestisce soluzioni tecnologiche per l'automazione dei processi di gestione del 
+												patrimonio documentale e informativo, con sede ad Avellino</p>
+				</div>
+			  </div>
+			</li>
+			
+			<!--  <li class="timeline-month" style="width: 100%;text-align: center;list-style: none;margin: 
+				0px 0 10px;padding: 14px 0 6px; font-size: 18px; background-color:#e9ecef;">	<h3>Formazione</h3>
+			</li>
+			<li>
+			  <div class="timeline-badge danger"><i class="ion-trophy"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-left:5%; width:40%;">
+				<div class="timeline-heading">
+				  <h2 class="timeline-title">LAUREA</h2>
+				  <h4 class="timeline-title">2012/2017</h4>
+			
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Laurea di Primo Livello in Scienze e Tecnologie Informatiche (L-31),
+												presso la facoltà di Scienze Matematiche, Fisiche e Naturali - Università degli Studi di Salerno .</p>
+				</div>
+			  </div>
+			</li>
+			<li class="timeline-inverted">
+			   <div class="timeline-badge warning"><i class="ion-ios-book"></i>    </div>
+			  <div class="timeline-panel" style="background-color:white; margin-right:5%; width:40%;">
+				<div class="timeline-heading">
+				  <h2 class="timeline-title">DIPLOMA</h2>
+				  <h4 class="timeline-title">2007/2012</h4>
+				
+				</div>
+				<div class="timeline-body">
+				  <p style="text-align:justify;">Diploma di Liceo Scientifico con indirizzo Piano Nazionale Informatica - 
+												 Liceo Scientifico Statale “Pasquale Stanislao Mancini” - Avellino </p>
+				</div>
+			  </div>
+			</li>
+			
+			  
+ -->			
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+     <div class="container text-center">
+		<header class="section-header wow fadeInUp">
+          <h3 style="font-size:30px;">CURRICULUM</h3>
+          <p style="font-size:25px;margin-bottom:10px;padding-bottom:0px">Vuoi Informazioni dettagliate su di me?</p>
+		  <p style="font-size:20px;margin-top:0px;padding-top:0px;margin-bottom:10px;padding-bottom:10px"><span> Scarica il mio Curriculum VITAE <i style="margin-left:4px;"class="ion-ios-book"></i></span></p>
+        </header>
+		
+        <a class="cta-btn" href="./curriculum.pdf" download="Curriculum_Mamone_Gianluigi.pdf"><i class="ion-android-download" style="margin-right:8px;"></i>DOWNLOAD</a>
+	  </div>
+    </section><!-- #call-to-action -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <section id="skills">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>My Skills</h3>
+          <p style="margin-bottom: 0;"> Dai uno sguardo alle mie competenze Professionali...</p>
+        </header>
+
+        <div class="skills-content">
+			<div class="row">
+				<div class="col-md-6"> 
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Java <i class="val">90%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">C <i class="val">60%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+
+						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">HTML5 <i class="val">100%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Bootstrap <i class="val">95%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Android <i class="val">80%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" style="background-color:#9c9d9e!important" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">CSS <i class="val">90%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" style="background-color:#a007ff!important" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">PHP <i class="val">80%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-warning" style="background-color:#f28426!important" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">JavaScript <i class="val">75%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">jQuery <i class="val">85%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Ajax <i class="val">55%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-warning"  role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">WordPress <i class="val">90%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger"  role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Photoshop <i class="val">80%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">SQL <i class="val">90%</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6"> 
+					<div class="progress">
+						<div class="progress-bar bg-info" style="background-color:#9c9d9e!important" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Xml <i class="val">60%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-warning" style="background-color:#a007ff!important"role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Smarty <i class="val">100%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" style="background-color:#f28426!important" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Apache Velocity <i class="val">95%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">MatLab <i class="val">80%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Eclipse <i class="val">75%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Android Studio <i class="val">85%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">MySql <i class="val">55%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-primary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">GitHub <i class="val">100%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" style="background-color:#9c9d9e!important"role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Visual Paradigm <i class="val">95%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-primary" style="background-color:#a007ff!important" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Visual Studio Code <i class="val">80%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" style="background-color:#f28426!important" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Pinnacle <i class="val">90%</i></span>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" style="background-color:#a007ff!important" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+							<span class="skill">Microsoft Office <i class="val">80%</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+         
+
+          
+
+          
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">274</span>
+            <p>Clients</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">421</span>
+            <p>Projects</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,364</span>
+            <p>Hours Of Support</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">18</span>
+            <p>Hard Workers</p>
+  				</div>
+
+  			</div>
+
+        <div class="facts-img">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+		<div class="container">
+
+			<header class="section-header">
+			  <h3 class="section-title">Our Portfolio</h3>
+			</header>
+
+			<div class="row">
+				 <div class="col-lg-12">
+					<ul id="portfolio-flters">
+						<li data-filter="*" class="filter-active">Tutti</li>
+						<li data-filter=".filter-app">Programmi</li>
+						<li data-filter=".filter-card">Card</li>
+						<li data-filter=".filter-web">Web</li>
+					</ul>
+				 </div>
+			</div>
+
+			<div class="row portfolio-container">
+				<div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+					<div class="portfolio-wrap">
+						<figure>
+							<img src="img/portfolio/app1.png" class="img-fluid" alt="">
+							<a style="z-indez:101" href="img/portfolio/app1.png" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Anteprima"><i class="ion ion-eye"></i></a>
+							<a href="img/aaa.gif" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Anteprima"><i class="ion ion-eye"></i></a>
+							
+							<a href="#" class="link-details" title="Dettagli"><i class="ion ion-android-open"></i></a>
+						</figure>
+
+						<div class="portfolio-info" style="padding-top:13px;">
+							<h4 style="margin-bottom: 5px;"><a href="#">Account Manager <img width="30px" src="img/iconaAccountManager.png" alt="" class="img-fluid">	</a></h4>
+							<p>Programmi</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Our Clients</h3>
+        </header>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+          <img src="img/clients/client-2.png" alt="">
+          <img src="img/clients/client-3.png" alt="">
+          <img src="img/clients/client-4.png" alt="">
+          <img src="img/clients/client-5.png" alt="">
+          <img src="img/clients/client-6.png" alt="">
+          <img src="img/clients/client-7.png" alt="">
+          <img src="img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container" style="background:#ffffff;padding-bottom: 20px; padding-top: 20px;">
+
+        <div class="section-header">
+          <h3>Contattami</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>A108 Adam Street, NY 535022, USA</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+		<div class="map" style="text-align:center; margin-bottom:4%">
+          <h4>Trova La Mia Posizione</h4>
+		   <p>Visualizzata Da Google Maps</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.8479300554523!2d14.828763415311704!3d40.919080079309836!2m3!1f0!2f0!3f0!3m2!1i1024!2i
+						768!4f13.1!3m3!1m2!1s0x133bcd7652f029fb%3A0x4bf03d866bb94ec0!2sVia+Roma%2C+83042+Atripalda+AV!5e0!3m2!1sen!2sit!4v1521534597433" 
+						width="1100" height="300" frameborder="0" style="border:0" allowfullscreen>
+			</iframe>
+		</div>
+		
+        <div class="form">
+          <div id="sendmessage">Il Messaggio &Egrave; Stato Inviato Correttamente...Grazie!!!</div>
+          <div id="errormessage"></div>
+		  <div style="text-align:center;">
+		   <h4>Contattami</h4>
+		   <p>Puoi Spedirmi Una Mail Compilando Il Form In Basso...</p>
+		</div>
+		  <form id="for" action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" />
+              
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+              
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="oggetto" id="oggetto" placeholder="Oggetto"/>
+              
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="messaggio" rows="5" placeholder="Messaggio"></textarea>
+              
+            </div>
+            <div class="text-center"><button type="submit">Invia Messaggio</button></div>
+          </form>
+        </div>
+
+		
+		
+		
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top" style="padding-bottom:0">
+      <div class="container">
+        <div class="row">
+
+          <!-- <div class="col-lg-3 col-md-6 footer-info">
+            <h3>BizPage</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-12 col-md-12 col-lg-12 footer-contact" style="text-align:center">
+            <div class="section-header">
+				<h3 style="color:white">SEGUIMI SU</h3>
+			</div>
+
+            <div class="social-links">
+              <a href="https://twitter.com/GianluigiMamone" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/gianluigi.mamone" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/gianlu_24/?hl=it" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://plus.google.com/103544298600820933087" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/gianluigi-mamone/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+             <a href="https://www.linkedin.com/in/gianluigi-mamone/" target="_blank" class="skype"><i class="ion-social-skype"></i></a>
+				
+			</div>
+
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+    <script src="js/jquery.validate.js"></script>	
+  
+   <script>
+		$(document).ready(function(){
+			
+			$('#for').validate({
+	                rules: {
+	                    nome: {
+							required: true,
+							minlength: 3,
+							maxlength: 15
+	                    },
+						email: {
+	                        required: true,
+	                        email: true
+	                    },
+						oggetto: {
+							required: true,
+							minlength: 8,
+							maxlength: 15
+	                    },
+						messaggio: {
+							required: true,
+							minlength: 8,
+							maxlength: 150
+	                    }
+	                },
+	                messages: {
+	                    nome: {
+	                        required: "Inserisci il Nome",
+	                        minlength: "Il nome deve essere almeno di 3 caratteri",
+	                        maxlength: "Il nome deve essere al pi&ugrave di 15 caratteri;"
+	                    },
+						email: {
+	                        required: "Inserisci l' Email",
+	                        email: "L'indizzo Email non &egrave; valido"
+	                    },
+						oggetto: {
+	                        required: "Inserisci l'Oggetto",
+	                        minlength: "L'Oggetto deve essere almeno di 8 caratteri",
+	                        maxlength: "L'Oggetto pu&ograve; essere al pi&ugrave di 15 caratteri;"
+	                    },
+						messaggio: {
+	                        required: "Inserisci il Messaggio",
+	                        minlength: "Il Messaggio deve essere almeno di 8 caratteri",
+	                        maxlength: "Il Messaggio pu&ograve; essere al pi&ugrave di 15 caratteri;"
+	                    }
+					},
+	                highlight: function (element) {
+	               		$(element).parent().addClass('error')
+	             	},
+	                submitHandler: function (form) {
+	                  	$.ajax({
+	                		url: "/js.html",
+	               			data: $(form).serialize(),
+	               			type: 'post',
+	               			success: function (data) {
+	               				alert("");
+	            				jq("#cont").html(data);
+	            			},
+	            			error: function (data) {
+	            				alert("Username e password errati");
+	            			},
+	            		});	
+	                }
+	        });
+		});
+   </script>
+   <style>
+    	#for .error {
+      		color:red
+      	}
+  	</style>
+
+	
+</body>
+</html>
